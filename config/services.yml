@@ -1,0 +1,8 @@
+services:
+    mundophpbb.difftools.listener:
+        class: mundophpbb\difftools\event\main_listener
+        arguments:
+            - '@template'
+            - '@user'
+        tags:
+            - { name: kernel.event_subscriber }

@@ -1,0 +1,17 @@
+<button type="button" class="button button-secondary bbcode-dif-wizard" title="{L_MUNDOPHPBB_DIFF_WIZARD}">
+    <i class="icon fa-columns fa-fw" aria-hidden="true"></i> <span>{L_MUNDOPHPBB_DIFF_WIZARD}</span>
+</button>
+
+<div id="diff-wizard-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:10000;"></div>
+
+<div id="diff-wizard-modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#fff; border:1px solid #ccc; padding:20px; z-index:10001; border-radius:8px; box-shadow:0 0 20px rgba(0,0,0,0.5); width:100%; max-width:900px; height: 800px, color:#333;">
+    <h3 style="margin-top:0;">{L_MUNDOPHPBB_DIFF_TITLE}</h3>
+    <div style="display:flex; gap:10px;">
+        <textarea id="diff-old" style="width:100%; height:200px; border:1px solid #ccc;" placeholder="{L_MUNDOPHPBB_DIFF_OLD}..."></textarea>
+        <textarea id="diff-new" style="width:100%; height:200px; border:1px solid #ccc;" placeholder="{L_MUNDOPHPBB_DIFF_NEW}..."></textarea>
+    </div>
+    <div style="margin-top:15px; text-align:right;">
+        <button type="button" id="generate-diff" class="button button-primary">{L_MUNDOPHPBB_DIFF_GENERATE}</button>
+        <button type="button" id="close-diff-wizard" class="button">{L_MUNDOPHPBB_DIFF_CANCEL}</button>
+    </div>
+</div>
